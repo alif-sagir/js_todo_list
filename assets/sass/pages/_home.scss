@@ -1,0 +1,132 @@
+@import "../abstracts/variables";
+
+.all_body {
+    background-color: $body_bg_color;
+    padding: 0px 500px;
+}
+
+/*input_form_area start*/
+.input_form_area_full {
+    .input_form_container {
+        border: $border;
+        background-color: $body_color_1;
+        padding: 0px 15px;
+
+        .input_button_area {
+            padding: 25px 0px;
+
+            /*input_area*/
+            .input_area {
+                border: $border;
+
+                form {
+
+                    input {
+                        font-family: $poppins;
+                        background-color: $body_color_2;
+                        color: $font_color;
+                        border: 0px;
+                        padding: 5px 0px;
+                        border-radius: 3px;
+                        outline: 0;
+                        padding-left: 10px;
+                    }
+                }
+            }
+
+            /*button_area*/
+            .input_button {
+                border: $border;
+                text-align: end;
+
+                button {
+                    border: 0px;
+                    padding: 5px 30px;
+                    background-color: $button_color;
+                    border-radius: 3px;
+                    color: $font_color;
+                    transition-duration: .6s;
+
+                    &:hover {
+                        color: $button_color;
+                        background-color: $font_color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*input_form_area end*/
+
+/*todo title start*/
+.todo_title_area_full {
+    .todo_title_container {
+        border: $border;
+
+        .todo_title {
+            border: $border;
+            background-color: $body_color_2;
+            border: $border;
+
+            h2 {
+                color: $font_color;
+                font-size: 30px;
+                font-weight: 900;
+                font-family: $poppins;
+                text-align: center;
+                margin: 0px;
+                padding: 15px 0px;
+
+            }
+        }
+    }
+}
+
+/*todo title end*/
+
+/*todo_list_reselt_area start*/
+
+.green {
+    background-color: green;
+}
+
+/*todo_list_reselt_area end*/
+// .ol_desine {
+//     padding: 0px;
+//     margin: 0px;
+//     background-color: $body_color_2;
+//     margin: 10px 0px;
+//     padding: 0px 15px;
+
+//     .li_desine {
+//         input {
+//             color: $font_color;
+//         }
+
+//         button {}
+
+//         i {}
+//     }
+// }
+.todo_result_area_container {
+    background-color: rgb(157, 155, 155);
+}
+
+.result_area {
+    display: flex;
+    justify-content: space-between;
+    border: $border;
+    margin: 10px 15px;
+    background: $body_color_2;
+    padding: 0px 10px;
+}
+
+.tlist_text {
+    color: blue;
+}
+
+.ol_desine {
+    margin: 0px;
+    padding: 0px;
+}

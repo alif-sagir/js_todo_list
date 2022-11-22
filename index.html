@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Todo List</title>
+    <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- full_body -->
+    <div class="full_body">
+        
+        <div class="todo_body">
+            <!-- input_area start -->
+            <div class="input_area_full">
+                <div class="container">
+                    <div class="input_area_container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="input_area">
+                                    <div class="row">
+                                        <!-- input_area form -->
+                                        <div class="col-9">
+                                            <div class="input_form">
+                                                <form action="#">
+                                                    <input id="input_value" type="text" placeholder="Type List">
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!-- input_area button-->
+                                        <div class="col-3">
+                                            <div class="input_button">
+                                                <button onclick="add_button()">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- input_area end -->
+
+            <!-- todo_title start -->
+            <div class="todo_area_full">
+                <div class="container">
+                    <div class="todo_area_container">
+                        <div class="todo_area_title">
+                            <h3>Todo List</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- todo_title end -->
+
+            <!-- todo_result_area start -->
+            <div class="result_area_full">
+                <div class="container">
+                    <div class="result_area_container">
+                        <!-- result_area_content -->
+                        <div class="result_area_content">
+                            <div class="row">
+                                <ol id="todo_result" class="remove_all_list">
+                                    <!-- <li>
+                                        <div class="check_area">
+                                            <input type="checkbox">
+                                        </div>
+                                        <div class="list_title">
+                                            <span>lorem ipsome</span>
+                                        </div>
+                                        <div class="delet_area">
+                                            <button><i class="fa-solid fa-trash-arrow-up"></i> </button>
+                                        </div>
+                                    </li>
+                                     -->
+
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- todo_result_area end -->
+            <!-- list_all_delete_area start -->
+            <div class="list_all_delete_area_full">
+                <div class="container">
+                    <div class="list_all_delete_area">
+                        <button onclick="all_delete_todo()">All Delete</button>
+                    </div>
+                </div>
+            </div>
+            <!-- list_all_delete_area end -->
+<!-- <button onclick="nnn()">button</button>
+<h1 id="mmm">
+    hellow
+</h1> -->
+        </div>
+        
+    </div>
+    <!-- java_script_start -->
+    <script>
+        function add_button() {
+            let user_valu;
+            user_valu = input_value.value;
+            todo_result.innerHTML += `
+        <li id='li_color_change'>
+            <div class="check_area">
+                <input onclick="complite()" type="checkbox">
+            </div>
+            <div class="list_title">
+                <span>${user_valu}</span>
+            </div>
+            <div class="delet_area">
+                <button onclick="delete_todo()">
+                    <i class="fa-solid fa-trash-arrow-up"></i> 
+                </button>
+            </div>
+        </li>
+                                    
+            `;
+            input_value.value = "";
+        }
+        function complite() {
+            // color_change.classList.toggle('background_color');
+            event.target.parentNode.parentNode.classList.toggle('backgrounddd_color');
+            // li_color_change.classList.toggle('backgrounddd_color');
+        }
+        function delete_todo() {
+            event.currentTarget.parentNode.parentNode.remove();
+        }
+        function all_delete_todo() {
+            color_change.target.parentNode.parentNode.remove();
+            
+        }
+        function nnn(){
+            mmm.classList.toggle('backgrounddd_color');
+        }
+
+    </script>
+</body>
+
+</html>

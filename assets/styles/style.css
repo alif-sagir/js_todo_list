@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img,
+iframe,
+a,
+span,
+i {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* color veriable */
+/* dark_mode_color */
+/* font name */
+/* border */
+.all_body {
+  background-color: #93b5ff;
+  padding: 0px 500px;
+}
+
+/*input_form_area start*/
+.input_form_area_full .input_form_container {
+  border: 0px solid red;
+  background-color: #11111d;
+  padding: 0px 15px;
+}
+.input_form_area_full .input_form_container .input_button_area {
+  padding: 25px 0px;
+  /*input_area*/
+  /*button_area*/
+}
+.input_form_area_full .input_form_container .input_button_area .input_area {
+  border: 0px solid red;
+}
+.input_form_area_full .input_form_container .input_button_area .input_area form input {
+  font-family: "Poppins";
+  background-color: #191933;
+  color: #d6dbf4;
+  border: 0px;
+  padding: 5px 0px;
+  border-radius: 3px;
+  outline: 0;
+  padding-left: 10px;
+}
+.input_form_area_full .input_form_container .input_button_area .input_button {
+  border: 0px solid red;
+  text-align: end;
+}
+.input_form_area_full .input_form_container .input_button_area .input_button button {
+  border: 0px;
+  padding: 5px 30px;
+  background-color: #545cff;
+  border-radius: 3px;
+  color: #d6dbf4;
+  transition-duration: 0.6s;
+}
+.input_form_area_full .input_form_container .input_button_area .input_button button:hover {
+  color: #545cff;
+  background-color: #d6dbf4;
+}
+
+/*input_form_area end*/
+/*todo title start*/
+.todo_title_area_full .todo_title_container {
+  border: 0px solid red;
+}
+.todo_title_area_full .todo_title_container .todo_title {
+  border: 0px solid red;
+  background-color: #191933;
+  border: 0px solid red;
+}
+.todo_title_area_full .todo_title_container .todo_title h2 {
+  color: #d6dbf4;
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Poppins";
+  text-align: center;
+  margin: 0px;
+  padding: 15px 0px;
+}
+
+/*todo title end*/
+/*todo_list_reselt_area start*/
+.green {
+  background-color: green;
+}
+
+/*todo_list_reselt_area end*/
+.todo_result_area_container {
+  background-color: rgb(157, 155, 155);
+}
+
+.result_area {
+  display: flex;
+  justify-content: space-between;
+  border: 0px solid red;
+  margin: 10px 15px;
+  background: #191933;
+  padding: 0px 10px;
+}
+
+.tlist_text {
+  color: blue;
+}
+
+.ol_desine {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* color veriable */
+/* dark_mode_color */
+/* font name */
+/* border */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+}
+/* responsive_desine_mixin */
+/*full_body*/
+.full_body {
+  background-color: black;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+}
+
+.todo_body {
+  border-radius: 5px;
+  border: 0px solid red;
+  height: 90vh;
+  background-color: #11111d;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px #6c6cb2;
+}
+
+/*input_area start*/
+.input_area_full .input_area_container .input_area {
+  margin: 25px 0px;
+  border: 0px solid red;
+  /*input_area form*/
+  /*input_area button*/
+}
+.input_area_full .input_area_container .input_area .input_form {
+  border: 0px solid red;
+}
+.input_area_full .input_area_container .input_area .input_form form input {
+  font-family: "Poppins";
+  border: 0px;
+  border-bottom: 2px solid #545cff;
+  border-radius: 10px;
+  color: white;
+  background-color: #191933;
+  padding: 5px 0px 5px 10px;
+  width: 100%;
+  background-color: black;
+}
+.input_area_full .input_area_container .input_area .input_form form input:hover {
+  background-color: #545cff;
+  color: black;
+}
+.input_area_full .input_area_container .input_area .input_button {
+  border: 0px solid red;
+  text-align: end;
+}
+.input_area_full .input_area_container .input_area .input_button button {
+  font-family: "Poppins";
+  border: 0px;
+  border-radius: 10px;
+  padding: 5px 20px;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  border: 3px solid #545cff;
+}
+.input_area_full .input_area_container .input_area .input_button button:hover {
+  background-color: #545cff;
+  color: black;
+}
+
+/*todo_title start*/
+.todo_area_full {
+  margin-bottom: 50px;
+}
+.todo_area_full .todo_area_container {
+  border-radius: 10px;
+  border: 0px solid red;
+  box-shadow: 0px 10px 20px #6c6cb2;
+}
+.todo_area_full .todo_area_container .todo_area_title {
+  text-align: center;
+  background-color: #191933;
+  border-radius: 10px;
+  border-bottom: 3px solid white;
+}
+.todo_area_full .todo_area_container .todo_area_title h3 {
+  color: white;
+  padding: 10px 0px;
+  font-weight: 600;
+  margin: 0px;
+}
+
+/*todo_title end*/
+/*todo_result_area start */
+.result_area_full .result_area_container .result_area_content {
+  border: 0px solid red;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 15px 0px;
+  box-shadow: 0px 4px 15px #6363c4;
+  height: 350px;
+  overflow-y: scroll;
+}
+.result_area_full .result_area_container .result_area_content ol {
+  margin: 0px;
+  color: white;
+}
+.result_area_full .result_area_container .result_area_content ol li {
+  display: flex;
+  background: black;
+  padding: 7px 10px;
+  border-radius: 10px;
+  margin: 15px 0px;
+  box-shadow: inset 0px -25px 58px #2e2eaf;
+  border: 3px solid #545cff;
+}
+.result_area_full .result_area_container .result_area_content ol li .check_area {
+  border: 0px solid red;
+}
+.result_area_full .result_area_container .result_area_content ol li .list_title {
+  border: 0px solid red;
+  width: 100%;
+  padding-left: 15px;
+}
+.result_area_full .result_area_container .result_area_content ol li .list_title span {
+  color: white;
+  font-family: "Poppins";
+}
+.result_area_full .result_area_container .result_area_content ol li .delet_area {
+  border: 0px solid red;
+  text-align: right;
+}
+.result_area_full .result_area_container .result_area_content ol li .delet_area button {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px 5px;
+}
+.result_area_full .result_area_container .result_area_content ol li .delet_area button i {
+  color: red;
+}
+
+/*todo_result_area end */
+/*list_all_delete_area start*/
+.list_all_delete_area_full {
+  margin-top: 40px;
+}
+.list_all_delete_area_full .list_all_delete_area {
+  text-align: center;
+}
+.list_all_delete_area_full .list_all_delete_area button {
+  border: 0px;
+  font-family: "Poppins";
+  font-weight: 700;
+  color: red;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid red;
+  padding: 5px 15px;
+  transition-duration: 0.6s;
+}
+.list_all_delete_area_full .list_all_delete_area button:hover {
+  background-color: red;
+  color: #11111d;
+}
+
+/* list_all_delete_area end*/
+.backgrounddd_color {
+  background: green;
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
